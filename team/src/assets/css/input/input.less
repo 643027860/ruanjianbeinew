@@ -1,0 +1,80 @@
+/*下拉框样式*/
+.el-select-dropdown{
+  border-width: 0!important;
+  background-color: rgba(0,0,0,0.3) !important;
+  ul{
+    padding: 0;
+    border: 1px solid rgb(128,128,128) !important;
+    li{
+      color: white;
+      background-color: rgba(0,0,0,0)!important;
+      &:hover{
+        background-color: rgba(0,0,0,0.3) !important;
+        span{
+          color: #409EFF!important;
+        }
+      }
+    }
+    li.selected{
+      background-color: rgba(0,0,0,0.5)!important;
+    }
+  }
+}
+/*表单输入框样式*/
+.myMainPage,.myGraphicalData,.manageModelList,.manageUploadModel,.manageModelDetail,.manageAnalyzeList,.manageExampleList,.manageUploadUser,.manageSourceList{
+  .el-form-item {
+    margin-bottom: 15px;
+    &:nth-last-child(1){
+      margin: 0px;
+    }
+  }
+  .el-form-item__label{
+    color: #FFFFFF!important;
+  }
+  input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+    color: rgb(233,233,233)!important;
+  }
+  input,textarea{
+    width: 200px;
+    background-color: rgba(0,0,0,0.25) !important;
+    border-color: transparent!important;
+    box-sizing: border-box!important;
+    &:focus{
+      border-color:#66afe9 !important;
+    }
+  }
+  .el-input__suffix{
+    i{
+      color: #FFFFFF!important;
+    }
+  }
+  input,textarea{
+    color: #FFFFFF!important;
+  }
+  .el-loading-spinner i{
+    color: #409EFF!important;
+  }
+  .searchButtonRight{
+    margin-left: 15%;
+  }
+}
+/*为了兼容手机端*/
+@media screen and(max-width: 767px){
+  .myMainPage,.myGraphicalData,.manageModelList,.manageUploadModel,.manageModelDetail,.manageAnalyzeList,.manageExampleList,.manageUploadUser,.manageSourceList{
+    .el-form-item{
+      //display: block;
+      &:nth-last-child(1){
+        .el-form-item__content{
+          display: block;
+        }
+      }
+      .el-form-item__label{
+        width: 70px;
+      }
+      .searchButton{
+        padding: 8px 14px;
+      }
+    }
+  }
+}
+

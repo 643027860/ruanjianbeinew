@@ -1,0 +1,59 @@
+/*表格样式*/
+.my-table{
+  background-color: rgba(0,0,0,0.25)!important;
+  color: #FFFFFF!important;
+  border-color: rgb(128,128,128)!important;
+  &:before,
+  *:before{
+    height: 0px!important;
+  }
+  th,tr,td,div{
+    background-color: rgba(0,0,0,0);
+  }
+  th>.cell{
+    color: #FFFFFF;
+  }
+  //数据最多显示两行，溢出显示...
+  .cell{
+    max-height: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  *{
+    border-color: rgb(128,128,128) !important;
+  }
+  .el-table__header-wrapper{
+    tr{
+      background-color: rgba(0,0,0,0.25);
+      th{
+        color: #FFFFFF;
+        background-color: rgba(0,0,0,0.4);
+      }
+    }
+  }
+  .el-table__body-wrapper{
+    tr{
+      background-color: rgba(0,0,0,0.1);
+    }
+    .el-table__empty-text{
+      color: white;
+    }
+  }
+  //修改带操作的表格背景色
+  .el-table__row{
+    &:hover{
+      td{
+        background-color: rgba(0,0,0,0.3) !important;
+      }
+    }
+  }
+  //修改固定右边操作的表格背景悬浮色
+  .hover-row{
+    td{
+      background-color: rgba(0,0,0,0.3) !important;
+    }
+  }
+}

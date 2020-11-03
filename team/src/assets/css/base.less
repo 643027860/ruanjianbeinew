@@ -1,0 +1,63 @@
+/*不可见*/
+.noSee{
+  display: none;
+}
+/*超出1行显示省略号*/
+.overPointr{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+/*超出2行显示省略号*/
+.overPointr2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+/*不能选中*/
+.noSelect{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*Ul清边距*/
+.MyUl{
+  padding: 0;
+  margin: 0;
+}
+/*清除浮动*/
+.clearFloat{
+  &:before,&:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+/*a标签样式*/
+.myFileLink{
+  color: white;
+  &:active{
+    color: white;
+  }
+  &:hover{
+    color: #36a2f5;
+  }
+}
+
+.pc{
+  display: block;
+}
+.mobile{
+  display: none!important;
+}
+body,html{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+

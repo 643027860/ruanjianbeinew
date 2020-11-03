@@ -1,0 +1,48 @@
+/*折叠面板样式*/
+.myGraphicalData,.manageUploadModel,.manageAnalyzeDetail{
+  .el-collapse-margin{
+    margin-bottom: 23px;
+  }
+  .el-collapse{
+    border-width: 0;
+    .el-collapse-item{
+      border-width: 0;
+      .el-collapse-item__header{
+        position: relative;
+        padding: 0 20px;
+        font-size: 16px;
+        color: white;
+        background-color: rgba(0,0,0,0.4);
+        border: 1px solid rgb(128,128,128);
+        i.el-collapse-item__arrow{
+          position: absolute;
+          right: 25px;
+        }
+      }
+      .el-collapse-item__wrap{
+        background-color: rgba(0,0,0,0);
+        border-width: 0;
+        .el-collapse-item__content{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+/*为了兼容手机端*/
+@media screen and(max-width: 767px){
+  .myGraphicalData.manageUploadModel,.manageAnalyzeDetail{
+    .el-collapse-margin{
+      margin-bottom: 15px;
+    }
+    .el-collapse{
+      .el-collapse-item{
+        .el-collapse-item__header{
+          i.el-collapse-item__arrow{
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
